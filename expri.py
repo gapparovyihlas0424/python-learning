@@ -1,33 +1,49 @@
-hello = 'Hello'
-world = 'World'
-
-greet = hello + world
-
-greeting = hello + ' ' + world
-
-gr = f"{hello} {world}"
-
-print(greet)  # output= HelloWorld
-print(greeting)  # Output = Hello World
-print(gr)  # = Hello World
-
-name = 'Ыхлас'
-time = '20:00'
-habit = 'reading'
-
-res = f"{name} likes {habit} Atomic Habits everyday starting from {str(time)} o\'clock "
-print(res)
+try:
+    x = int(input("enter : "))
+    print(10/x)
+except ZeroDivisionError as e:
+    print(e)
+except TypeError as e:
+    print(e)
+else:
+    print("there was no error")
 
 
-def greeting(greet):
-    return lambda name: f"{greet},{name}"
 
 
-morning_greet = greeting('Good morning')
 
-# Output = <function greeting.<locals>.<lambda> at 0x000001F853593480>
-print(morning_greet)
-print(morning_greet('Yhlas'))
+
+
+# hello = 'Hello'
+# world = 'World'
+
+# greet = hello + world
+
+# greeting = hello + ' ' + world
+
+# gr = f"{hello} {world}"
+
+# print(greet)  # output= HelloWorld
+# print(greeting)  # Output = Hello World
+# print(gr)  # = Hello World
+
+# name = 'Ыхлас'
+# time = '20:00'
+# habit = 'reading'
+
+# res = f"{name} likes {habit} Atomic Habits everyday starting from {str(time)} o\'clock "
+# print(res)
+
+
+# def greeting(greet):
+#     return lambda name: f"{greet},{name}"
+
+
+# morning_greet = greeting('Good morning')
+
+# # Output = <function greeting.<locals>.<lambda> at 0x000001F853593480>
+# print(morning_greet)
+# print(morning_greet('Yhlas'))
 
 # white_button = {
 #     'signal': 'up',
